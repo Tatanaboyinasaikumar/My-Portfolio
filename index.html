@@ -1,0 +1,814 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>MyPortfolio</title>
+  <base href="https://tatanaboyinasaikumar.github.io/My-Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.ef46db3751d8e999.css"></head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+header{
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  position: relative;
+}
+header nav{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 12;
+}
+.navbar{
+  width: 90%;
+  display: flex;
+  margin: 20px auto 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+  header nav .logo{
+  height: 80px;
+  width: 150px;
+}
+.logo img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+nav .menu{
+  display: flex;
+}
+nav .menu li{
+  list-style: none;
+  margin: 0 10px;
+}
+nav .menu a{
+  color: #2c3e50;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+nav .menu a:hover{
+  color: #000;
+}
+nav .search-box{
+  position: relative;
+  height: 40px;
+  width: 250px;
+}
+.search-box input[type="text"]{
+  position: absolute;
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  color: #2c3350;
+  border: 2px solid #2c3350;
+  background: #f2f2f2;
+  padding: 0 10px 0 40px;
+}
+.search-box a{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 20px;
+  color: #2c3350;
+  transform: translateY(-50%);
+  border-right: 2px solid #2c3350;
+  padding: 0 5px 0 0;
+}
+.text-content{
+  position: absolute;
+  top: 33%;
+  left: 7%;
+  z-index: 12;
+}
+header .text-content .text{
+  font-size: 27px;
+  color: #2c3350;
+  padding:10px ;
+}
+header .text-content .name{
+color: #2c3350;
+ font-size: 75px;
+ font-weight: 600;
+ margin: -20px 0 0 -3px;
+}
+header .text-content .job{
+ color: #2c3350;
+ font-size: 40px;
+ margin: 5px 0;
+ margin-top: -4px;
+ display: flex;
+}
+.text-content .typing-text{
+  margin-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #1de2d1;
+  animation: typing 5s steps(167) infinite;
+}
+@keyframes typing{
+  0%{
+    width: 0ch;
+  }
+  50%{
+    width: 25ch;
+  }
+  100%{
+    width: 0ch;
+  }
+}
+.text-content .job .one{
+  color: #1de2d1;
+}
+.text-content .job .two{
+  color: #1de2d1;
+}
+.buttons{
+  margin: 20px 0 0 50px;
+  
+}
+.buttons a{
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.text-content .buttons button{
+  outline: none;
+  margin: 0 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #fff;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-image: linear-gradient( 135deg, #2AFADF     10%, #C346C2 100%);
+}
+.buttons button:hover{
+  transform: scale(0.97);
+}
+.content .girl img{
+  position: absolute;
+  height: 95%;
+  bottom: 0;
+  right: 80px;
+  position: absolute;
+}
+header .media-icons{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+.media-icons a{
+ margin-top: 8px;
+ font-size: 20px;
+ font-weight: 500;
+ text-decoration: none;
+ opacity: 0.7;
+ color: #2c3350;
+ transition: all 0.3s ease;
+}
+.media-icons a:hover{
+ opacity: 1;
+}
+
+
+
+
+
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+section{
+    padding: 100px 0;
+    margin: auto;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: 90px;
+    margin-left: 100px;
+}
+.about .title{
+    text-decoration: underline;
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 450px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+    position: relative;
+    bottom: 230px;
+    left: 450px;
+}
+.about .about-content .right a{
+    
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    position: relative;
+    bottom: 70px;
+    left: 450px;
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+
+
+.services, .teams{
+    color:black;
+}
+.services .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.services .title::after,
+.teams .title::after{
+   
+    content: "My_Projects";
+    text-decoration: underline;
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    text-align: justify;
+    border-radius: 6px;
+    padding: 50px 25px;
+    width: 90%;
+    position: relative;
+    left: 90px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+   
+}
+.services .serv-content .card:hover{
+    background: crimson;
+    
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+    
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+    
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px 0 10px 0;
+    text-decoration: underline;
+}
+
+
+.skills{
+    width: 100%;
+}
+.skills .title::after{
+    content: "what i know";
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+
+.skills .skills-content .right{
+    position: relative;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 60%;
+}
+.skills-content .right .js::before{
+    width: 80%;
+}
+.skills-content .right .php::before{
+    width: 50%;
+}
+.skills-content .right .mysql::before{
+    width: 70%;
+}
+
+.contact{
+    width: 100%;
+}
+.contact .title::after{
+    content: "get in touch";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+
+.contact .right{
+    bottom: 300px;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area{
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button{
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+  color: crimson;
+  background: none;
+}
+
+
+
+
+
+html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+  }
+  ::selection{
+    color: #fff;
+    background: #1cc7d0;
+  }
+  .wrapper{
+
+    height: 300px;
+    width: 320px;
+    position: relative;
+    bottom: 10px;
+    transform-style: preserve-3d;
+      perspective: 1000px;
+  }
+  .wrapper .card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    background: #fff;
+    border-radius: 20px;
+    transform: translateY(0deg);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+  }
+  .wrapper:hover > .front-face{
+    transform: rotateY(-180deg);
+  }
+  .wrapper .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .wrapper:hover > .back-face{
+    transform: rotateY(0deg);
+  }
+  .wrapper .back-face img{
+    height: 150px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 50%;
+    background: linear-gradient(375deg, #373a3a, #2c2e2d);
+  }
+  .wrapper .back-face{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transform: rotateY(180deg);
+    margin: 136px 1px 7px 1px;
+}
+  .wrapper .back-face .info{
+    text-align: center;
+  }
+  .back-face .info .title{
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .back-face ul{
+    display: flex;
+  }
+  .back-face ul a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    margin: 0 5px;
+    line-height: 38px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background: linear-gradient(375deg, #f3f6f7, #f1f5f3);
+    transition: all 0.5s ease;
+  }
+  .back-face ul a:hover{
+    color: #1cc7d0;
+    border-color: #f5f8f8;
+    background: linear-gradient(375deg, transparent, transparent);
+  }
+  .about .about-content .left img {
+    height: 450px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 0 0 -40px;
+}
+</style>
+<body>
+  <header>
+    <nav>
+    <div class="navbar">
+      <div class="logo">
+       <img src="My-Portfolio/assets/images/Portfolio.png" alt="">
+      </div>
+      <ul class="menu">
+         <li><a href="#content">Home</a></li>
+         <li><a href="#services">Projects</a></li>
+         <li><a href="#skills">Skills</a></li>
+         <li><a href="#contact">Contact</a></li>
+       </ul>
+       <div class="search-box">
+         <input type="text" placeholder="Search here...">
+         <a href="#"><i class="fas fa-search"></i></a>
+       </div>
+    </div>
+    </nav>
+    <div class="content" id="content">
+      <div class="text-content">
+        <div class="text">Hello, It's Me </div>
+        <div class="name">Sai Kumar</div>
+        <div class="job">
+          <div class="job">
+            <span>And I'm a</span>
+             <div class="typing-text">
+               <span class="one">Associate </span>
+               <span class="two">Software Developer.</span>
+             </div>
+           </div>
+        </div>
+        <div class="buttons">
+    <button><a href="#about">About Me</a></button>
+    <button><a href="#">Follow Me</a></button>
+  </div>
+      </div>
+      <div class="girl">
+        <img src="My-Portfolio/assets/images/shaggy.gif" alt="">
+      </div>
+    </div>
+    <div class="media-icons">
+     <a href="#"><i class="fab fa-facebook-f"></i></a>
+     <a href="#"><i class="fab fa-twitter"></i></a>
+     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+     <a href="#"><i class="fab fa-pinterest"></i></a>
+   </div>
+  </header>
+  <section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About me </h2> <br>
+        <div class="about-content">
+            <div class="column left">
+                <div class="wrapper">
+                    <div class="card front-face">
+                      <img src="My-Portfolio/assets/images/profile-1.jpg" alt="Flip Card">
+                    </div>
+                    <div class="card back-face">
+                      <img src="My-Portfolio/assets/images/profile-1.jpg" alt="Flip Card">
+                      <div class="info">
+                        <div class="title">Sai Kumar</div>
+                        <p>User interface designer and <br>Associate Software developer</p>
+                      </div>
+                      <ul>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+            <div class="column right">
+                <p><strong style="font-size: 30px; ">I am Sai Kumar</strong><br>i'm a Associate Software Developer. i've been working with Mphasis Company. since feb-2022, and my responsibilities inclue to create a web application. .</p>
+                <a href="My-Portfolio/assets/images/2507034_SaiKumar_Tatanaboyina_230105_120315_230105_121348.pdf">Download CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <div class="max-width">
+        <h2 class="title"></h2>
+        <div class="serv-content">
+            <div class="card">
+                <div class="box">
+                 
+                    <div class="text">Online Music Store</div>
+                        <p> Online music store describes a website or online
+                            service that lets you browse through and buy music from many
+                            genres and artists. Most online music stores allow the customer to
+                            listen to samples of songs, and buy both single songs or full albums</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                 
+                    <div class="text">Online Pharmacy</div>
+                    <p> Online pharmacies allow you to arrange medications
+                        over the internet through websites and applications (web/mobile). Medicine business online save you the hassle of visiting an actual
+                        pharmacy. You need to upload the actual prescription or doctor's
+                        note on the online pharmacy's portal, and then make the payment</p>
+                </div>
+            </div>
+           
+           </div>
+        </div>
+    
+</section>
+
+
+<section class="skills" id="skills">
+    <div class="max-width"><br><br><br>
+        <h2 class="title">My skills</h2>
+        <div class="skills-content">
+            <div class="column left"><br><br>
+            </div>
+            <div class="column right">
+                <div class="bars">
+                    <div class="info">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="line html"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>CSS</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="line css"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>ADO .NET</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line js"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Angular</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="line php"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>C#</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="line php"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>MySQL</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line mysql"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact me </h2> <br>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text">Get in Touch </div>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Tatanaboyina Sai Kumar</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">Address</div>
+                            <div class="sub-title">Narasaraopet,Guntur-522601 Andhra Pradesh</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">Tatanaboyina.Kumar@Mphasis.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="text">Message me</div>
+                <form action="#">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="field textarea">
+                        <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                    </div>
+                    <div class="button-area">
+                        <button type="submit">Send message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="runtime.a7f6b83697d2c8a8.js" type="module"></script><script src="polyfills.b0f0f55b254385e5.js" type="module"></script><script src="main.be93305dd0544a53.js" type="module"></script>
+
+</body></html>
